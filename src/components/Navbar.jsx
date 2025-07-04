@@ -1,29 +1,48 @@
 import "./Navbar.css";
-import logo from "../assets/logoforbilloratech.jpg";
+import logo from "../assets/logoforbilloratech.png";
 import { FaSearch } from "react-icons/fa";
+import { IoCartSharp } from "react-icons/io5";
+import { FaUserAlt } from "react-icons/fa";
+import { CiMenuFries } from "react-icons/ci";
 
 function Navbar() {
   return (
     <nav className="nav-bar">
       <div className="logo">
-        <img src={logo} alt="MiniMart Logo" width="30" height="24" />
-        <span>Mini mart</span>
+        <img src={logo} alt="MiniMart Logo" />
+        <span className="logo-text" >Mini mart</span>
       </div>
+      
+     
 
-      <div>
+      <div className="right-secNavigation">
         <ul>
+          <li><a href="#" active >Home</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#">Support</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Buy</a></li>
+        
         </ul>
       </div>
-
-      <div>
-        <FaSearch />
-        <input   type="text" className="search"   placeholder="Search the products"   />
+       <div className="search-bar">
+      
+        
+        <input type="text"  placeholder="Search the products.." />
+         <FaSearch size={20} className="search-icon"/>
       </div>
-    </nav>
+      <div  className="right-icon">
+       <a href="#"> <FaUserAlt size={20}/></a>
+      </div>
+      <div className="menu-item">
+ <a href="#" ><CiMenuFries size={20}/></a>
+      </div>
+
+            <div className="cart-set">
+             <a href="#"> <IoCartSharp className="cart" />  
+            <span>Buy</span>
+             </a>   </div>
+             
+      
+</nav>
   );
 }
 

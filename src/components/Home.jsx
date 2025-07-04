@@ -1,12 +1,10 @@
-
 function Home() {
   return (
     <>
  <div>
-    <p>this is home page</p>
+    <p></p>
  </div>
     </>
   )
 }
-
 export default Home
