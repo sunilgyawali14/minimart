@@ -3,43 +3,36 @@ import logo from "../assets/logoforbilloratech.png";
 import { FaSearch } from "react-icons/fa";
 import { IoCartSharp } from "react-icons/io5";
 import { FaUserAlt } from "react-icons/fa";
-import { CiMenuFries } from "react-icons/ci";
+
 
 function Navbar() {
   return (
-    <nav className="nav-bar">
+    <nav className="nav-container">
       <div className="logo">
         <img src={logo} alt="MiniMart Logo" />
         <span className="logo-text" >Mini mart</span>
       </div>
-      
-     
-
-      <div className="right-secNavigation">
+    
+      <div className="nav-links">
         <ul>
           <li><a href="#" active >Home</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">About</a></li>
-        
         </ul>
       </div>
-       <div className="search-bar">
-      
-        
+
+       <div className="search-bar">  
         <input type="text"  placeholder="Search the products.." />
          <FaSearch size={20} className="search-icon"/>
       </div>
-      <div  className="right-icon">
+
+      <div  className="profile-icon">
        <a href="#"> <FaUserAlt size={20}/></a>
       </div>
-      <div className="menu-item">
- <a href="#" ><CiMenuFries size={20}/></a>
-      </div>
 
-            <div className="cart-set">
-             <a href="#"> <IoCartSharp className="cart" />  
-            <span>Buy</span>
-             </a>   </div>
+       <div className="cart-set">
+        <a href="#"> <IoCartSharp className="cart" /></a> 
+        </div>
              
       
 </nav>
