@@ -1,7 +1,7 @@
 
 
 import Navbar from "./components/Navbar"
-import Home from "./components/Home"
+import Home from "./Pages/Home"
 function App() {
   // here we communicate with javascript
 
