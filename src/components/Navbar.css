@@ -1,17 +1,6 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-<<<<<<< HEAD
-.nav-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #1f1f25;
-
-    color: white;
-    padding: 18px 60px;
-}
-=======
 body {
   
   font-family: 'Segoe UI', sans-serif;
@@ -32,7 +21,6 @@ body {
     padding: 18px 60px;
 }
 
->>>>>>> dev
 .logo-text {
     margin-left: 13px;
     font-size: 24px;
@@ -41,10 +29,6 @@ body {
     color: yellow;
     font-weight: 700;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> dev
 .logo img {
     height: 56px;
     width: 56px;
@@ -53,10 +37,6 @@ body {
     margin-right: 5px;
 
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> dev
 .search-bar {
     display: flex;
     justify-content: center;
@@ -65,26 +45,16 @@ body {
     border-radius: 10px;
     padding: 4px 16px;
     max-width: 320px;
-<<<<<<< HEAD
-    max-width: 400px;
-=======
->>>>>>> dev
     width: 100%;
     gap: 5px;
     padding-left: 4px;
     background-color: aliceblue;
 }
-<<<<<<< HEAD
-.search-icon {
-    color: black;
-}
-=======
 
 .search-icon {
     color: black;
 }
 
->>>>>>> dev
 .search-bar input {
     border-radius: 9px;
     width: 100%;
@@ -92,12 +62,8 @@ body {
     color: black;
     background-color: white;
 }
-<<<<<<< HEAD
-.right-secNavigation ul {
-=======
 
 .nav-links ul {
->>>>>>> dev
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,31 +73,15 @@ body {
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
-ul li a {
-    color: white;
-=======
 
 ul li a {
     color: #ffffff;
->>>>>>> dev
     display: flex;
     justify-content: center;
     text-decoration: none;
     font-size: 1.15rem;
     font-weight: bold;
     align-items: center;
-<<<<<<< HEAD
-    transition: background 0.2s, color 0.2s;
-}
-.right-secNavigation a:hover {
-    color: red;
-    background: rgb(91, 90, 90);
-}
-a:active {
-    color: green;
-}
-=======
     font-weight: 500;
     transition: #f0f0f0 0.3s ease;
 }
@@ -145,7 +95,6 @@ a:active {
     color: green;
 }
 
->>>>>>> dev
 .cart {
     display: flex;
     justify-content: center;
@@ -153,10 +102,6 @@ a:active {
     width: 100%;
     font-size: 1.7rem;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> dev
 .cart-set {
     display: flex;
     flex-direction: column;
@@ -166,30 +111,16 @@ a:active {
     color: white;
     text-decoration: none;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> dev
 .cart-set a {
     text-decoration: none;
     color: white;
 }
-<<<<<<< HEAD
-.right-icon {
-=======
 
 .profile-icon {
->>>>>>> dev
     display: flex;
     justify-content: center;
     gap: 15px;
 }
-<<<<<<< HEAD
-.right-icon a {
-    text-decoration: none;
-    color: white;
-}
-=======
 
 .profile-icon a {
     text-decoration: none;
@@ -208,4 +139,3 @@ a:active {
 
 
 
->>>>>>> dev

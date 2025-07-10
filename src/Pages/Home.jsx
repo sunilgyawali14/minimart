@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import "../Pages/home.css"
-=======
 import Image from "../assets/homepic.png"
->>>>>>> dev
 function Home() {
   return (
     <>
@@ -23,6 +19,6 @@ function Home() {
 
 
   </>
-  )
+  );
 }
-export default Home
+export default Home;
