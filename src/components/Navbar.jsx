@@ -7,6 +7,7 @@ import { FaUserAlt } from "react-icons/fa";
 
 function Navbar() {
   return (
+    <>
     <nav className="nav-container">
       <div className="logo">
         <img src={logo} alt="MiniMart Logo" />
@@ -15,7 +16,7 @@ function Navbar() {
     
       <div className="nav-links">
         <ul>
-          <li><a href="#" active >Home</a></li>
+          <li><a href="#" >Home</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">About</a></li>
         </ul>
@@ -36,6 +37,7 @@ function Navbar() {
              
       
 </nav>
+</>
   );
 }
 
