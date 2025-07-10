@@ -1,15 +1,11 @@
 
-
+import  "./App.css"
 import Navbar from "./components/Navbar"
-<<<<<<< HEAD
-import Home from "./components/Home"
+import Home from "./pages/Home"
 import Footer from "./components/Footer"
 
-=======
-import Home from "./Pages/Home"
->>>>>>> main
 function App() {
-  // here we communicate with javascript
+  
 
 
 
@@ -22,8 +18,8 @@ function App() {
  
 
     </>
-  )
+  );
 }
 
-export default App
+export default App;
 
