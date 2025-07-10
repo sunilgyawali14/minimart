@@ -1,0 +1,17 @@
+.footer-container h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
