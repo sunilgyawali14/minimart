@@ -1,6 +1,6 @@
 
 
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar.jsx"
 import Home from "./Pages/Home"
 function App() {
  
@@ -12,11 +12,11 @@ function App() {
     
     <Navbar/>
     <Home/>
- 
+    <Footer />
 
     </>
-  )
+  );
 }
 
-export default App
+export default App;
 
