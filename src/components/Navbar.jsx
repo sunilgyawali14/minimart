@@ -3,6 +3,7 @@ import logo from "../assets/logoforbilloratech.png";
 import { FaSearch } from "react-icons/fa";
 import { IoCartSharp } from "react-icons/io5";
 import { FaUserAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 function Navbar() {
@@ -16,9 +17,10 @@ function Navbar() {
     
       <div className="nav-links">
         <ul>
-          <li><a href="#" >Home</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li>  <Link to="/About">About</Link></li>
+          <li>  <Link to="/Product">Product</Link></li>
+          <li>  <Link to="/Contact">Contact</Link></li>
         </ul>
       </div>
 
@@ -27,7 +29,7 @@ function Navbar() {
         <FaSearch size={20} className="search-icon" />
       </div>
 
-      <div className="right-icon">
+      <div className="profile-icon">
         <a href="#"><FaUserAlt size={20} /></a>
       </div>
 
