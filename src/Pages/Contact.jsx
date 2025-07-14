@@ -2,7 +2,7 @@ import "../Pages/contact.css";
 
 function Contact() {
   return (
-    <div className="form-wrapper">
+    <div className="form-wrapper contact-section">
       <form className="row g-3 contact-form shadow-lg p-4 bg-white rounded">
         <div className="col-md-6">
           <label htmlFor="inputEmail4" className="form-label">Email</label>
