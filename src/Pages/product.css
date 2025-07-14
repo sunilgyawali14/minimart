@@ -26,6 +26,17 @@
   font-size: 0.9rem;
   color: #555;
 }
+.reuseable-content{
+  transition: all 0.3s ease-in-out;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+}
+.reuseable-content:hover{
+ background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  border: 1px solid #ddd;
+}
 
 
 
