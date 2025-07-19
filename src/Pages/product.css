@@ -6,7 +6,6 @@
   justify-items: center;
   background-color: rgb(228, 226, 226);
 }
-
 .product-card {
   width: 100%;
   max-width: 18rem;
@@ -15,13 +14,10 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #fff;
 }
-
-
 .card-title {
   font-weight: 600;
   color: #333;
 }
-
 .card-text {
   font-size: 0.9rem;
   color: #555;
@@ -31,7 +27,6 @@
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-
 }
 .reuseable-content:hover{
  background: linear-gradient(135deg, #fdfbfb, #ebedee);
