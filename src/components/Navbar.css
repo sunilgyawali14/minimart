@@ -83,7 +83,7 @@ ul li a {
     font-weight: bold;
     align-items: center;
     font-weight: 500;
-    transition: #f0f0f0 0.3s ease;
+    /* transition: #f0f0f0 0.3s ease; */
 }
 
 .nav-links a:hover {

@@ -8,18 +8,31 @@ import "./App.css";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 
+import { CiDark } from "react-icons/ci";
+import { useContext } from "react";
+import { ThemeContext } from "./context/ThemeContext";
+
 function App() {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <>
-      <Navbar />
+      <div className={theme === 'light'?'bg-dark text-white min-vh-100': 'bg-white text-black min-vh-100'}
+      >
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/product" element={<Product />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
+        <div>
+        <button onClick={toggleTheme} >
+        <CiDark />
+        </button>
+        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
     </>
   );
 }

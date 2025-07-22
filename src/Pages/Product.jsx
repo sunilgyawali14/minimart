@@ -18,9 +18,9 @@ function Product() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     axios
-      .get("https://fakestoreapi.com/products")
+      .get("https://fakestoreapi.com/products?limit=5")
       .then((res) => {
-        setProducts(res.data);
+        setProducts(res.data );
         console.log("You are getting data now",res.data);
       })
       .catch((err) => {

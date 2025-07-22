@@ -1,8 +1,9 @@
+
 import "./Home.css"
 import Image from "../assets/homepic.png"
 import Shoes from "../assets/nike1.jpg"
 import Jewerly from "../assets/Gold.jpg"
-import Salt from "../assets/product8.jpg"
+import Salt from "../assets/salt1.jpg"
 function Home() {
   return (
     <>
@@ -49,15 +50,6 @@ function Home() {
     <span className="visually-hidden">Next</span>
   </button>
 </div>
-
-
-{/* <div className="home-container">
-  <div>
-    <span className="home-welcome">welcome</span> to Mini mart 
-<img src={Image} alt="" />
-  </div>
-
-</div> */}
 
 
 
