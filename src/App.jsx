@@ -4,10 +4,8 @@ import Navbar from "./components/Navbar";
 import Home from "./Pages/Home";
 import Footer from "./components/Footer";
 import Product from "./Pages/Product";
-import "./App.css";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
-
 import { CiDark } from "react-icons/ci";
 import { useContext } from "react";
 import { ThemeContext } from "./context/ThemeContext";
@@ -16,13 +14,14 @@ function App() {
   const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <>
-      <div className={theme === 'light'?'bg-dark text-white min-vh-100': 'bg-white text-black min-vh-100'}
+      <div className={theme === 'light'?'bg-white text-dark min-vh-100': 'bg-dark text-white min-vh-100'}
       >
         <Navbar />
 
-        <div>
-        <button onClick={toggleTheme} >
-        <CiDark />
+        <div className="dark-toggle-container">
+        <button onClick={toggleTheme} className=" dark-toggle-btn " >
+      <CiDark />
+       
         </button>
         </div>
         <Routes>

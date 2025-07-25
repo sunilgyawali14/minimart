@@ -4,7 +4,13 @@ import Image from "../assets/homepic.png"
 import Shoes from "../assets/nike1.jpg"
 import Jewerly from "../assets/Gold.jpg"
 import Salt from "../assets/salt1.jpg"
+import { useNavigate } from "react-router-dom" // 1) import
 function Home() {
+  // task 2nd : use navigate.
+  const navigate = useNavigate();
+  const navigateProductPage=()=>{
+    navigate('/product');
+  }
   return (
     <>
 <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -50,7 +56,11 @@ function Home() {
     <span className="visually-hidden">Next</span>
   </button>
 </div>
-
+<div className="navigate-btn">
+  <button className="btn btn-primary" onClick={navigateProductPage}>
+    Shop Now
+  </button>
+</div>
 
 
   </>

@@ -36,8 +36,7 @@ function Navbar() {
       <div className="cart-set">
         <a href="#">
           <IoCartSharp className="cart" />
-          <span>Buy</span>
-        </a>
+            </a>
       </div>
     </nav> 
     </>
