@@ -1,5 +1,5 @@
 import Customcard from "../components/Customcard";
-import "../Pages/Product.css";
+import "./Product.css";
 
 import { useEffect, useState } from "react";
 import axios from "axios";
