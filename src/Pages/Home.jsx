@@ -1,6 +1,5 @@
 
 import "./Home.css"
-import Image from "../assets/homepic.png"
 import Shoes from "../assets/nike1.jpg"
 import Jewerly from "../assets/Gold.jpg"
 import Salt from "../assets/salt1.jpg"

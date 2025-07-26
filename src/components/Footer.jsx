@@ -1,4 +1,4 @@
-import "../components/footer.css"
+import "../components/Footer.css"
 import { FaRegCopyright } from "react-icons/fa";
 
 function Footer(){
@@ -14,11 +14,6 @@ return (
 <div className="footer-copyright">
    <FaRegCopyright /><span>2025 MiniMart. All Rights Reserved.</span> </div>
 </footer>
-
-
-
-
-
 
 </>
 
