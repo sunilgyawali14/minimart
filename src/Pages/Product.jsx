@@ -54,7 +54,7 @@ const handlePageChange =(pageNumber)=>{
       </div>
       <nav aria-label="Page navigation example">
   <ul className="pagination justify-content-center">
-    <li className={`page-item ${currentPage=== 1 ? "dissable":""} `}>
+    <li className={`page-item ${currentPage=== 1 ? "disabled":""} `}>
       <button className="page-link" onClick={()=>handlePageChange(currentPage-1)}>      
       Previous</button></li>
 
@@ -67,7 +67,7 @@ const handlePageChange =(pageNumber)=>{
         </button>
       </li>
     ))}
-  {/*  Nextt button   */}
+ 
   <li className={`page-item ${currentPage===totalPages ? "disable":""}`}>
 <button className="page-link" onClick={() => handlePageChange(currentPage+1)}>
 Next
