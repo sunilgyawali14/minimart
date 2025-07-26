@@ -1,17 +1,16 @@
 .product-container {
   display: grid;
- grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   padding: 40px;
   justify-items: center;
-  /* background-color: rgb(228, 226, 226); */
+
 }
 
 .product-card {
   width: 100%;
   max-width: 18rem;
   border-radius: 15px;
-  /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 
