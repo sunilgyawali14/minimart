@@ -1,4 +1,4 @@
-import Customcard from "../components/Customcard";
+import CustomCard from "../components/CustomCard";
 import "./Product.css";
 
 import { useEffect, useState } from "react";
@@ -42,7 +42,7 @@ const handlePageChange =(pageNumber)=>{
     <>
       <div className="product-container reuseable-content">
         {itemsToShow.map((item) => (
-          <Customcard
+          <CustomCard
             key={item.id}
             image={item.image}
             title={item.title}

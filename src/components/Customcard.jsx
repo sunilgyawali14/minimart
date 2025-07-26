@@ -2,7 +2,7 @@ import "../components/CustomCard.css";
 import { useState } from "react";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
-function Customcard({ image, title, price, description, button, children }) {
+function CustomCard({ image, title, price, description, button, children }) {
   //we have to pass props here props : is a discreption of common things in the cart
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -39,4 +39,4 @@ function Customcard({ image, title, price, description, button, children }) {
     </>
   );
 }
-export default Customcard;
+export default CustomCard;
