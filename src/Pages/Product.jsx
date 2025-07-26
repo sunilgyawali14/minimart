@@ -9,6 +9,23 @@ function Product() {
   //useEffect -->alarm
 
   const [products, setProducts] = useState([]);
+  const [currentPage,setCurrentPage]=useState(1)
+// show  four product per page
+const itemsPerPage=8;
+// calculation of pages
+const start=(currentPage-1)*itemsPerPage;
+const end =start+itemsPerPage;
+const itemsToShow=products.slice(start,end)
+
+//calculate the total pages according to the api
+const totalPages=Math.ceil(products.length/itemsPerPage)
+// handle page 
+const handlePageChange =(pageNumber)=>{
+ if (pageNumber >= 1 && pageNumber <= totalPages) {
+  setCurrentPage(pageNumber);
+}
+
+};
 
   useEffect(() => {
     axios
@@ -24,7 +41,7 @@ function Product() {
   return (
     <>
       <div className="product-container reuseable-content">
-        {products.map((item) => (
+        {itemsToShow.map((item) => (
           <Customcard
             key={item.id}
             image={item.image}
@@ -35,6 +52,31 @@ function Product() {
           />
         ))}
       </div>
+      <nav aria-label="Page navigation example">
+  <ul className="pagination justify-content-center">
+    <li className={`page-item ${currentPage=== 1 ? "dissable":""} `}>
+      <button className="page-link" onClick={()=>handlePageChange(currentPage-1)}>      
+      Previous</button></li>
+
+    {/* page number */}
+    {Array.from({length:totalPages}).map((item,index)=>(
+      <li key={index} className={`page-item ${currentPage===index+1?"active":""}`}>
+        <button className="page-link" onClick={()=>handlePageChange(index+1)}>
+          {index+1}
+
+        </button>
+      </li>
+    ))}
+  {/*  Nextt button   */}
+  <li className={`page-item ${currentPage===totalPages ? "disable":""}`}>
+<button className="page-link" onClick={() => handlePageChange(currentPage+1)}>
+Next
+</button>
+  </li>
+     
+  
+  </ul>
+</nav>
     </>
   );
 }
